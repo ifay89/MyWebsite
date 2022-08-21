@@ -1,0 +1,110 @@
+* {
+    font-family:courier;
+}
+.logo {
+    width: 90px;
+    cursor:pointer;
+}
+.logo1{
+    width: 30%;
+    position:absolute;
+    left: 200px;
+    top: -1px;
+}
+b {
+    position: relative;
+    text-align: center;
+    padding: 10px 100px; 
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.75)),url('https://eleven21-sandbox.imgix.net/62308b4bae2b3c2cc2756d19/BLOG-is-computer-science-oversaturatedb1f4eea2ea89a0ceab4b4436de5972c08c51474.PABRDeAmEksEyc7.jpg?w=600&ar=4:2.5&fit=crop');
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: courier;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    font-weight: bold;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fefcfc;
+    text-transform: uppercase;
+}
+.navbar ul li ::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #6e276d;
+    position:absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li :hover:after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute; 
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fefcfc;
+}
+.content h1{
+  margin: 20px auto; 
+  font-weight: 100; 
+  line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #6e276d;
+    background: transparent;
+    color: #fefcfc;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+span{
+    background: #6e276d;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
